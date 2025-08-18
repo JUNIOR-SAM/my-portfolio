@@ -213,7 +213,7 @@ textarea {
     position: fixed;
     top: 800px;
     top: 88%;
-    right: 10px;
+    right: 15px;
     text-decoration: none;
     z-index: 9999;
 }
@@ -222,7 +222,7 @@ textarea {
     position: fixed;
     top: 800px;
     top: 83%;
-    right: -5px;
+    right: 1px;
     text-decoration: none;
     z-index: 9999;
 }
@@ -231,7 +231,7 @@ textarea {
     position: fixed;
     top: 800px;
     top: 77%;
-    right: 1px;
+    right: 7px;
     text-decoration: none;
     z-index: 9999;
 }
