@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODING</title>
+    <link rel="stylesheet" href="coding.css" />
+    <link rel="shortcut icon" href="./image/sam.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <nav class="navbar text-white fixed-top navbar-expand-lg  border-black border-bottom border-3 ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white " href="index.html"><img src="image/sam.png" alt=""
+                    class="image-blender mx-lg-4 mx-2 mx-md-5" /><img src="image/logo word 2.png" alt=""
+                    class="image-blend me-lg-5 me-0" /></a>
+            <button class="navbar-toggler bg-white tog" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="width: 30px; height: 30px"></span>
+            </button>
+            <div class="offcanvas offcanvas-end mx-auto  " tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel" style="background-color: #3c3cd3; width: 60%; height: 100vh">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">
+                        Side Bar
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body pt-3 fw-bold">
+                    <ul class="navbar-nav justify-content-center  ms-lg-5 ms-0 ps-lg-5  flex-grow-1  gap-lg-3 ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white ps-lg-5" aria-current="page"
+                                href="index.html#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html#About Us">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown mb-4">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Contact Us
+                            </a>
+                            <ul class="dropdown-menu text-white">
+                                <li><a href="tel:+2349030030518" class="call-btn ps-5" style="text-decoration: none;">
+                                        📞 Call Me
+                                    </a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#contactForm"
+                                        onclick="myEmail()">oyebodes19@gmail.com </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" target="_blank">Other Contacts</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form
+                        class="d-flex mt-lg-1  col-lg-5 col-12 row gap-3 ps-lg-5 ps-0 justify-content-end  me-lg-1 me-0  gap-lg-3 "
+                        role="search">
+                        <button
+                            class="btn btn-outline-light border border-white border-2 fw-bold nav-btn col-lg-4 col-10"
+                            style="font-size: 13px;">MY PROJECT</button>
+                        <button
+                            class="btn btn-outline-light  border border-white border-2 fw-bold nav-btn col-lg-4 col-10"
+                            style="font-size: 13px;">MY DESIGN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="whatsapp d-flex  gap-0">
+        <div class="text-white col-8  text-center need  fw-bold">Need help? Contact us</div>
+        <a href="https://wa.me/2349030030518?text=*Hello%20Samuel%20.* %0A%20I%20am%20interested%20in%20your%20work."
+            target="_blank">
+            <img src="./image/whatsapp-icon-6953525_1280-removebg-preview.png" class="what"
+                alt="Chat with me on WhatsApp">
+        </a>
+    </div>
+    <div class="facebook d-flex  gap-0">
+        <!-- <div class="text-white col-8  text-center need  fw-bold">Need help? Contact us</div> -->
+        <a href="https://www.facebook.com/profile.php?id=61578384882029"
+            target="_blank" >
+            <img src="./image/download-removebg-preview (2).png" class="whatt" alt="Chat with me on WhatsApp">
+        </a>
+    </div>
+    <div class="instagram d-flex  gap-0">
+        <!-- <div class="text-white col-8  text-center need  fw-bold">Need help? Contact us</div> -->
+        <a href="https://wa.me/2349030030518?text=*Hello%20Samuel%20.* %0A%20I%20am%20interested%20in%20your%20work."
+            target="_blank">
+            <img src="image/instagram.png" alt="" class="whattt" alt="Chat with me on WhatsApp">
+        </a>
+    </div>
+
+    <section class="project  mx-auto rounded-4 pb-5 text-center mb-5 blurItem">
+        <section>
+            <h1 class="fst-italic pt-4 pb-3">MY PROJECT</h1>
+            <div class="row  mx-auto ">
+                <div class="col-lg-3 col-12 col-md-6">
+                    <div class="card border-black border-2 py-2 px-2">
+                        <video id="myVideo1">
+                            <source src="image/first.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="row mt-3 d-flex justify-content-center video">
+                            <button onclick="playVideo('myVideo1')" class="col-3 play">Play</button>
+                            <button onclick="pauseVideo('myVideo1')" class="col-3 play">Pause</button>
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title text-center">SAM CART</h5>
+                            <p class="card-text ">This is a web page related to adding of items to cart resembling of
+                                E-commerce website or application like JUMIA.... </p> <a
+                                class="lik mt-5 py-2 rounded-2 px-3 text-white fst-italic"
+                                href="https://junior-sam.github.io/Cart-Replicate/">Check it out.....</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 col-md-6 mt-lg-0 mt-5">
+                    <div class="card  border-black border-2 py-2 px-2">
+                        <video id="myVideo2">
+                            <source src="image/LOOPing system - Google Chrome 2025-08-08 21-46-55.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="row mt-3 d-flex justify-content-center video">
+                            <button onclick="playVideo('myVideo2')" class="col-3 play">Play</button>
+                            <button onclick="pauseVideo('myVideo2')" class="col-3 play">Pause</button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">LOOPING SYSTEM</h5>
+                            <p class="card-text ">This is a web page related to adding of items to cart resembling of
+                                E-commerce website or application like JUMIA.... </p> <a
+                                class="lik mt-5 py-2 rounded-2 px-3 text-white fst-italic"
+                                href="https://junior-sam.github.io/A-loop-system/">Check it out.....</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 col-md-6 mt-lg-0 mt-5">
+                    <div class="card  border-black border-2 py-2 px-2">
+                        <video id="myVideo3">
+                            <source src="image/Loop - Google Chrome 2025-08-11 16-55-36.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="row mt-3 d-flex justify-content-center video">
+                            <button onclick="playVideo('myVideo3')" class="col-3 play">Play</button>
+                            <button onclick="pauseVideo('myVideo3')" class="col-3 play">Pause</button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">CALCULATION TABLE</h5>
+                            <p class="card-text">A calculation table which help you with your tables of multiplication,
+                                addition, subtraction and division. Type in your digit and see result.</p>
+                            <a class="lik mt-5 py-2 rounded-2 px-3 text-white fst-italic"
+                                href="https://junior-sam.github.io/Calculation-table/">Check it out.....</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 col-md-6 mt-lg-0 mt-5">
+                    <div class="card  border-black border-2 py-2 px-2">
+                        <video id="myVideo3">
+                            <source src="image/Loop - Google Chrome 2025-08-11 16-55-36.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="row mt-3 d-flex justify-content-center video">
+                            <button onclick="playVideo('myVideo3')" class="col-3 play">Play</button>
+                            <button onclick="pauseVideo('myVideo3')" class="col-3 play">Pause</button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">CALCULATION TABLE</h5>
+                            <p class="card-text">A calculation table which help you with your tables of multiplication,
+                                addition, subtraction and division. Type in your digit and see result.</p>
+                            <a class="lik mt-5 py-2 rounded-2 px-3 text-white fst-italic"
+                                href="https://junior-sam.github.io/Calculation-table/">Check it out.....</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="row  mx-auto g-4 mt-5">
+                <div class="col-lg-3 col-12 col-md-6">
+                    <div class="card border-black border-2 py-2 px-2">
+                        <img src="./image/Screenshot 2025-06-13 112817.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Sign Up Page</h5>
+                            <p class="card-text ">This is a sign up page for my project where a user who doesn't have an
+                                account before will sign up to have a personal account for the Google Keep</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 col-md-6">
+                    <div class="card  border-black border-2 py-2 px-2">
+                        <img src="./image/Screenshot 2025-06-13 112807.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Sign In Page</h5>
+                            <p class="card-text">This is a sign in page where a users just have to login to his/her
+                                account
+                                with <br> e-mail and password after you have successfully create your account</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 col-md-6">
+                    <div class="card  border-black border-2 py-2 px-2">
+                        <img src="./image/Screenshot 2025-06-13 112137.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">The Dashboard</h5>
+                            <p class="card-text">This is my Google Keep dashboard where a user can add a note with
+                                images,
+                                it also has the features to edit and delete too</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 col-md-6">
+                    <div class="card  border-black border-2 py-2 px-2">
+                        <img src="./image/Screenshot 2025-06-13 112154.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">The Local Storage</h5>
+                            <p class="card-text">This is my local storage where all the user's information are being
+                                stored
+                                or saved, both the note and image are saved too.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section>
+            <div class="row  mx-auto g-4 mt-5">
+                <div class="col-lg-3 col-12 col-md-6">
+                    <div class="card border-black border-2 py-2 px-2">
+                        <img src="./image/Screenshot 2025-06-13 112817.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Sign Up Page</h5>
+                            <p class="card-text ">This is a sign up page for my project where a user who doesn't have an
+                                account before will sign up to have a personal account for the Google Keep</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 col-md-6">
+                    <div class="card  border-black border-2 py-2 px-2">
+                        <img src="./image/Screenshot 2025-06-13 112807.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Sign In Page</h5>
+                            <p class="card-text">This is a sign in page where a users just have to login to his/her
+                                account
+                                with <br> e-mail and password after you have successfully create your account</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 col-md-6">
+                    <div class="card  border-black border-2 py-2 px-2">
+                        <img src="./image/Screenshot 2025-06-13 112137.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">The Dashboard</h5>
+                            <p class="card-text">This is my Google Keep dashboard where a user can add a note with
+                                images,
+                                it also has the features to edit and delete too</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 col-md-6">
+                    <div class="card  border-black border-2 py-2 px-2">
+                        <img src="./image/Screenshot 2025-06-13 112154.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">The Local Storage</h5>
+                            <p class="card-text">This is my local storage where all the user's information are being
+                                stored
+                                or saved, both the note and image are saved too.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="email  pt-5 pb-4  rounded-5 mx-auto mb-4 my" id="form">
+        <form id="contactForm" action="https://formsubmit.co/oyebodes19@gmail.com" method="POST"
+            class="col-12 text-center" enctype="multipart/form-data">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://my-website-five-amber.vercel.app/thankyou.html">
+            <input type="text" id="text" name="name" placeholder="Your Name" class="col-10"><br><br>
+            <input type="email" id="email" name="email" placeholder="Your Email" class="col-10"><br><br>
+            <input type="file" class="btn bg-black text-white mb-0 col-10" id="image" name="attachment"
+                accept="image/png, image/jpeg">
+            <img id="preview" class="m-auto border border-danger border-2" src="#" alt="Image Preview"
+                style="display:none; max-width: 100px; border-radius: 10px;" /> <br><br>
+            <textarea id="message" name="message" placeholder="Your Message" class="col-10"></textarea><br><br>
+            <div class="row d-flex justify-content-center gap-5"><button class="e-btn col-6 rounded-3" type="submit"
+                    onclick="allowEmail()">Send
+                    Message</button>
+                <button class="f-btn col-3 rounded-3" type="button" onclick="exitEmail()">Cancel</button>
+            </div>
+        </form>
+    </section>
+
+
+</body>
+<script src="coding.js"></script>
+
+</html>
