@@ -1,6 +1,9 @@
 function myEmail() {
     form.style.display = "block";
     document.body.style.overflow = "hidden";
+    document.body.style.position = "fixed";
+    document.body.style.width = "100vw";
+    document.body.style.top = `-${window.scrollY}px`;
     document.querySelector(".blurItem").style.filter = "blur(10px)";
     document.querySelector(".blurItem").style.pointerEvents = "none"; 
 }
@@ -8,6 +11,10 @@ function myEmail() {
 function exitEmail() {
     form.style.display = "none";
     document.body.style.overflow = "";
+    document.body.style.position = "";
+    document.body.style.width = "";
+    window.scrollTo(0, -parseInt(document.body.style.top || "0")); 
+    document.body.style.top = "";
     document.querySelector(".blurItem").style.filter = "blur(0px)";
     document.querySelector(".blurItem").style.pointerEvents = "";
 }
