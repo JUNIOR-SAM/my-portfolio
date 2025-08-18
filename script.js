@@ -61,6 +61,18 @@ document.getElementById('image').addEventListener('change', function (event) {
     }
 });
 
+showMore = ()=>{
+    document.querySelectorAll('.me').forEach(mee =>{
+        if (mee.style.display === "block"){
+            mee.style.display = "none"
+        }else{
+            mee.style.display= "block"
+        }
+
+
+    });
+}
+
 
 
 

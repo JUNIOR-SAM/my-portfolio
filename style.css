@@ -41,12 +41,12 @@ body {
     /* overflow: hidden; */
 }
 
-/* .sect:hover{
+ /* .sect:hover{
     transform: rotateY(180deg);
     cursor: pointer;
     transition: all 5.5s ease-in-out;
-} */
-.card-overlay {
+} 
+ .card-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -64,13 +64,13 @@ body {
     font-size: 1.0rem;
     text-align: center;
     padding: 20px;
-    /* border-radius: 20px; */
+    border-radius: 20px; 
 }
 
 .sect:hover .card-overlay {
     opacity: 1;
     cursor: pointer;
-}
+}  */
 
 .yoo {
     margin-bottom: 150px;
@@ -250,4 +250,12 @@ textarea {
     transform: translateY(-20px);
     cursor: pointer;
     transition: 0.7s ;
+}
+
+.me{
+    display: none;
+}
+
+#us:hover{
+    cursor: pointer;
 }
