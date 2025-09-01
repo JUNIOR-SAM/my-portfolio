@@ -60,12 +60,38 @@ document.getElementById('image').addEventListener('change', function (event) {
     }
 });
 
-    function playVideo(id) {
-        document.getElementById(id).play();
+    // function playVideo(id) {
+    //     document.getElementById(id).play();
+    // }
+    // function pauseVideo(id) {
+    //     document.getElementById(id).pause();
+    // }
+
+    function playVideo(videoId) {
+    const video = document.getElementById(videoId);
+    video.play();
+    if (video.requestFullscreen) {
+        video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+    } else if (video.msRequestFullscreen) { 
+        video.msRequestFullscreen();
     }
-    function pauseVideo(id) {
-        document.getElementById(id).pause();
+}
+
+function pauseVideo(videoId) {
+    const video = document.getElementById(videoId);
+    video.pause();
+    if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
     }
+}
 
     ScrollReveal().reveal("section", {
         delay: 400,

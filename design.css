@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #f8f9fa; */
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #3c3cd3;
+    /* background-color: #4040c7; */
+    color: white;
+    height: 65px;
+}
+
+
+
+.image-blender {
+    width: 40px;
+}
+
+.image-blend {
+    width: 150px;
+}
+
+    .d-block {
+    width: 100%;
+
+}
+
+
+.sect {
+    background-color: #3c3cd3;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+ /* .sect:hover{
+    transform: rotateY(180deg);
+    cursor: pointer;
+    transition: all 5.5s ease-in-out;
+} 
+ .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    color: #3c3cd3;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 2;
+    font-size: 1.0rem;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px; 
+}
+
+.sect:hover .card-overlay {
+    opacity: 1;
+    cursor: pointer;
+}  */
+
+.yoo {
+    margin-bottom: 150px;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.212), rgba(255, 255, 255, 0.212)), url(image/clint-patterson-dYEuFB8KQJk-unsplash.jpg);
+    /* background: url(image/clint-patterson-dYEuFB8KQJk-unsplash.jpg), linear-gradient(135deg, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.932)); */
+    background-size: cover;
+    background-position: center;
+    /* min-height: 400px; */
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .yoo {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .yoo {
+        height: 60vh;
+        /* or adjust to your preference */
+    }
+}
+
+.yoo p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 100px;
+}
+
+.about {
+    width: 300px;
+    max-width: 80%;
+    border-radius: 100%;
+    margin-top: -150px;
+}
+
+.project {
+    background-color: white;
+    border: 3px solid #3c3cd3;
+}
+
+.nav-btn {
+    /* width: 130px; */
+    height: 40px;
+}
+
+.nav-btn:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.code {
+    background-color: #3c3cd3;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+
+.e-btn {
+    background-color: #3c3cd3;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.f-btn {
+    background-color: red;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: black;
+    font-style: italic;
+}
+
+.my {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    max-width: 1000px;
+    height: 500px;
+    display: none;
+    gap: 1rem;
+    border: 1.5px solid rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 0px 10px yellow;
+    border-radius: 10px;
+    background: linear-gradient(200deg, blue, gold);
+    z-index: 10000;
+}
+
+.what {
+    width: 80px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.whatt{
+    width: 60px;
+}
+
+.whattt{
+    width: 50px;
+}
+
+.whatsapp {
+    position: fixed;
+    top: 800px;
+    top: 88%;
+    right: 15px;
+    text-decoration: none;
+    z-index: 9999;
+}
+
+.facebook {
+    position: fixed;
+    top: 800px;
+    top: 83%;
+    right: 1px;
+    text-decoration: none;
+    z-index: 9999;
+}
+
+.instagram {
+    position: fixed;
+    top: 800px;
+    top: 77%;
+    right: 7px;
+    text-decoration: none;
+    z-index: 9999;
+}
+
+.need {
+    background-color: green;
+    padding-top: 10px;
+    height: 35px;
+    margin-top: 25px;
+    font-size: 11px;
+    margin-right: -10px;
+   

@@ -75,9 +75,9 @@
                             class="btn btn-outline-light border border-white border-2 fw-bold nav-btn col-lg-4 col-10 pt-2"
                             style="font-size: 13px;">
                             MY PROJECT</a>
-                        <button
+                        <a>
                             class="btn btn-outline-light  border border-white border-2 fw-bold nav-btn col-lg-4 col-10"
-                            style="font-size: 13px;">MY DESIGN</button>
+                            style="font-size: 13px;">MY DESIGN</a>
                     </form>
                     <!-- <form class="pb-3 gap-lg-3 gap-3 row  mt-1  border border-danger col-lg-3 col-12 col-md-12 ms-3"
                         role="search">
@@ -130,7 +130,7 @@
 
         <section class="text-center sect my-5 w-75 mx-auto py-4 px-lg-5 px-3 text-white rounded-4" id="About Us about">
             <img src="./image/ChatGPT Image Jun 30, 2025, 03_38_56 PM.png " alt="" class="about">
-            <h3 class="fw-bold pb-1 pt-2" onclick="showMore()" id="us">ABOUT US</h3>
+            <h3 class="fw-bold pb-1 pt-2" onclick="showMore()" id="us">ABOUT ME</h3>
             <p>Click Up<svg xmlns="http://www.w3.org/2000/svg" height="40px"
                     viewBox="0 -960 960 960" width="40px" fill="#000000">
                     <path
@@ -235,7 +235,7 @@
                     <div class="card border-black border-2 py-2 px-2">
                         <a href="coding.html">
                             <div style="background-color:  #3c3cd3;" class="d-flex justify-content-center rounded-3">
-                                <img src="./image/COLOURBOX22834162-removebg-preview.png" class="card-img-top" alt="..."
+                                <img src="./image/coding.png" class="card-img-top" alt="..."
                                     style="width: 200px; height: 200px;">
                             </div>
                         </a>
@@ -261,9 +261,11 @@
                 </div>
                 <div class="col-lg-4 col-12 col-md-6 cardd">
                     <div class="card  border-black border-2 py-2 px-2">
+                        <a href="design.html">
                         <div style="background-color:  #3c3cd3;" class="d-flex justify-content-center rounded-3"><img
                                 src="./image/icons8-color-mode.gif" class="card-img-top" alt="..."
                                 style="width: 200px; height: 200px;"></div>
+                                </a>
                         <div class="card-body">
                             <h5 class="card-title text-center">GRAPHICS DESIGN</h5>
                             <p class="card-text">This is my Google Keep dashboard where a user can add a note with
@@ -287,11 +289,11 @@
             <input type="hidden" name="_next" value="https://junior-sam.github.io/my-portfolio/thankyou.html"> <input
                 type="text" id="text" name="name" placeholder="Your Name" class="col-10"><br><br>
             <input type="email" id="mail" name="email" placeholder="Your Email" class="col-10"><br><br>
-            <input type="file" class="btn bg-black text-white mb-0 col-10" id="image" name="attachment"
-                accept="image/png, image/jpeg" style="padding:5px 0 35px 50px;"><br><br>
-            <img id="preview" class="mb-3" src="#" alt="Image Preview"
-                style="display:none; max-width: 100px; border-radius: 10px;" />
-            <textarea id="messages" name="message" placeholder="Your Message" class="col-12"></textarea><br><br>
+            <input type="file" class="btn bg-black text-white  col-10" id="image" name="attachment"
+                accept="image/png, image/jpeg" style="padding:5px 0 35px 50px; margin-bottom: -10px;"><br><br>
+            <img id="preview" class="mb-2" src="#" alt="Image Preview"
+                style="display:none; max-width: 100%; border-radius: 10px;" />
+            <textarea id="messages" name="message" placeholder="Your Message" class="col-10"></textarea><br><br>
             <div class="row d-flex justify-content-center gap-5"><button class="e-btn col-6 rounded-3"
                     onclick="allowEmail()">Send
                     Message</button>
