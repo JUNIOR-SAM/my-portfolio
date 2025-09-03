@@ -10,6 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     /* background-color: #f8f9fa; */
     overflow-x: hidden;
+    
 }
 
 .navbar {
@@ -243,4 +244,9 @@ textarea {
     margin-top: 25px;
     font-size: 11px;
     margin-right: -10px;
-   
+}
+
+.birth{
+    margin-top: 100px;
+    height: 1000px;
+}
