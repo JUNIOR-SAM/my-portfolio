@@ -13,11 +13,11 @@ body {
 }
 
 .navbar {
-    background-color: #3c3cd3;
-    /* background-color: #4040c7; */
+    /* background-color: #3c3cd3; */  /* ❌ remove this */
     color: white;
     height: 65px;
 }
+
 
 
 
@@ -41,36 +41,17 @@ body {
     /* overflow: hidden; */
 }
 
- /* .sect:hover{
-    transform: rotateY(180deg);
-    cursor: pointer;
-    transition: all 5.5s ease-in-out;
-} 
- .card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    color: #3c3cd3;
-    font-style: italic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 2;
-    font-size: 1.0rem;
-    text-align: center;
-    padding: 20px;
-    border-radius: 20px; 
+#myNavbar,
+#myNavbar a,
+#myNavbar .nav-btn,
+.navbar-toggler,
+.offcanvas,
+.offcanvas a {
+transition: all 1s ease-in-out;
 }
 
-.sect:hover .card-overlay {
-    opacity: 1;
-    cursor: pointer;
-}  */
+
+
 
 .yoo {
     margin-bottom: 150px;
@@ -91,7 +72,6 @@ body {
 @media (min-width: 769px) and (max-width: 1200px) {
     .yoo {
         height: 60vh;
-        /* or adjust to your preference */
     }
 }
 
@@ -111,12 +91,13 @@ body {
 
 .project {
     background-color: white;
-    border: 3px solid #3c3cd3;
+    border: 3px solid #3c3cd3; 
 }
 
 .nav-btn {
-    /* width: 130px; */
     height: 40px;
+    border: 2px solid;
+    background: transparent;
 }
 
 .nav-btn:hover {
@@ -125,9 +106,10 @@ body {
     font-weight: bold;
 }
 
+/* 
 .code {
     background-color: #3c3cd3;
-}
+} */
 
 .email {
     display: flex;

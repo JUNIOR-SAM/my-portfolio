@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="other.css">
+</head>
+<body>
+    <div class="row col-lg-10 col-12 d-flex justify-content-center px-2">
+        <div class="form1 col-lg-5  text-center text-white  fs-2 font-monospace fst-italic alll ">Welcome
+            <br>
+            <span class="fs-5"> Signup to continue</span>
+        </div>
+        <div class="form2 col-lg-5  all  ">
+            <form id="contactForm" action="https://formsubmit.co/oyebodes19@gmail.com" method="POST"
+            class="col-12 text-center" enctype="multipart/form-data">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://junior-sam.github.io/my-portfolio/thankyou.html"> <input
+                type="text" id="text" name="name" placeholder="Your Name" class="col-12 "><br><br>
+            <input type="email" id="mail" name="email" placeholder="Your Email" class="col-12   "><br><br>
+            <input type="file" class="btn bg-black text-white  col-12" id="image" name="attachment"
+                accept="image/png, image/jpeg" style="padding:5px 0 35px 50px; margin-bottom: -10px;"><br><br>
+            <img id="preview" class="mb-2" src="#" alt="Image Preview"
+                style="display:none; max-width: 100%; border-radius: 10px;" />
+            <textarea id="messages" name="message" placeholder="Your Message" class="col-12"></textarea><br><br>
+            <div class="row d-flex justify-content-center gap-3"><button class="e-btn col-7 col-lg-7 rounded-3"
+                    onclick="allowEmail()">Send
+                    Message</button>
+                <button class="f-btn col-3 col-lg-4 rounded-3" type="button" onclick="exitEmail()">Cancel</button>
+            </div>
+        </form>
+            </div>
+        </div>
+    </div> 
+</body>
+<script src="other.js"></script>
+</html>

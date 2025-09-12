@@ -18,17 +18,17 @@
 </head>
 
 <body>
-    <nav class="navbar text-white fixed-top navbar-expand-lg  border-black border-bottom border-3 ">
+    <nav class="navbar  fixed-top navbar-expand-lg  border-black border-bottom border-3 " id="myNavbar">
         <div class="container-fluid">
             <a class="navbar-brand text-white " href="#"><img src="image/sam.png" alt=""
-                    class="image-blender mx-lg-4 mx-2 mx-md-5" /><img src="image/logo word 2.png" alt=""
+                    class="image-blender mx-lg-4 mx-2 mx-md-5 text-white" /><img src="image/logo word 2.png" alt=""
                     class="image-blend me-lg-5 me-0" /></a>
             <button class="navbar-toggler bg-white tog" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="width: 30px; height: 30px"></span>
             </button>
             <div class="offcanvas offcanvas-end mx-auto  " tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel" style="background-color:#3c3cd3; width: 60%; height: 100vh">
+                aria-labelledby="offcanvasNavbarLabel" style="width: 60%; height: 100vh;">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">
                         Menu
@@ -38,13 +38,13 @@
                 <div class="offcanvas-body pt-3 fw-bold">
                     <ul class="navbar-nav justify-content-center  ms-lg-5 ms-0 ps-lg-5  flex-grow-1  gap-lg-3 ">
                         <li class="nav-item">
-                            <a class="nav-link active text-white ps-lg-5" aria-current="page" href="#Home">Home</a>
+                            <a class="nav-link active  ps-lg-5" aria-current="page" href="#Home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#About Us">About Us</a>
+                            <a class="nav-link " href="#About Us">About Us</a>
                         </li>
                         <li class="nav-item dropdown mb-4">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                            <a class="nav-link dropdown-toggle " href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Contact Us
                             </a>
@@ -63,7 +63,7 @@
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" target="_blank">Other Contacts </a>
+                                    <a class="dropdown-item" href="other contact.html">Other Contacts </a>
                                 </li>
                             </ul>
                         </li>
@@ -72,25 +72,13 @@
                         class="d-flex mt-lg-1  col-lg-5 col-12 row gap-3 ps-lg-5 ps-0 justify-content-center  me-lg-1 me-0  gap-lg-3 "
                         role="search">
                         <a href="coding.html"
-                            class="btn btn-outline-light border border-white border-2 fw-bold nav-btn col-lg-4 col-10 pt-2"
-                            style="font-size: 13px;">
+                            class="btn btn-outline-light  border-2 fw-bold nav-btn col-lg-4 col-10 pt-2"
+                            style="font-size: 13px;" >
                             MY PROJECT</a>
                         <a href="design.html"
-                            class="btn btn-outline-light  border border-white border-2 fw-bold nav-btn col-lg-4 col-10 pt-2"
-                            style="font-size: 13px;">MY DESIGN</a>
+                            class="btn btn-outline-light   border-2 fw-bold nav-btn col-lg-4 col-10 pt-2"
+                            style="font-size: 13px;" >MY DESIGN</a>
                     </form>
-                    <!-- <form class="pb-3 gap-lg-3 gap-3 row  mt-1  border border-danger col-lg-3 col-12 col-md-12 ms-3"
-                        role="search">
-                        <button
-                            class="btn btn-outline-dark text-white nav-btn border-2 fw-bold col-8 col-md-5 col-lg-4 ms-lg-5 ms-0"
-                            type="button">
-                            MY PROJECT
-                        </button> <button
-                            class="btn btn-outline-dark text-white nav-btn border-2 fw-bold col-8 col-md-5 col-lg-4"
-                            type="button">
-                            MY DESIGN
-                        </button>
-                    </form> -->
                 </div>
             </div>
         </div>
@@ -98,11 +86,14 @@
 
     <div class="blurItem">
         <section class="yoo" id="Home">
-            <!-- <img src="./image/clint-patterson-dYEuFB8KQJk-unsplash.jpg" alt="" class="d-block"> -->
-            <p class="text-white text-center">Work Hard, Dream Big</p>
+            <div class="text-white" style="padding-top: 55%;padding-left: 15%;">
+                <h1>Hello, I'm Samuel</h1>
+                <h2>I am <span id="typed-text" style="color: gold;"></span></h2>
+            </div>
+            <!-- <p class="text-white text-center">Work Hard, Dream Big</p>
             <p class="text-center px-4 fs-5 pt-5 fw-light fst-italic">Creativity is not what you build in a day, it is
                 you
-                that keep pushing at it. </p>
+                that keep pushing at it. </p> -->
         </section>
 
         <div class="whatsapp d-flex  gap-0">
@@ -128,7 +119,7 @@
 
         <!-- <div><img src="./image/whatsapp-icon-6953525_1280-removebg-preview.png" alt="" class="what"></div> -->
 
-        <section class="text-center sect my-5 w-75 mx-auto py-4 px-lg-5 px-3 text-white rounded-4" id="About Us about">
+        <section class="text-center sect my-5 w-75 mx-auto py-4 px-lg-5 px-3 text-white rounded-4" id="About Us" >
             <img src="./image/ChatGPT Image Jun 30, 2025, 03_38_56 PM.png " alt="" class="about">
             <h3 class="fw-bold pb-1 pt-2" onclick="showMore()" id="us">ABOUT ME</h3>
             <p>Click Up<svg xmlns="http://www.w3.org/2000/svg" height="40px"
@@ -167,7 +158,7 @@
         </section>
 
 
-        <section class="project w-75 rounded-4 mx-auto my-5 pt-lg-1 pb-lg-4 pb-4 pt-3  ">
+        <section class="project w-75 rounded-4 mx-auto my-5 pt-lg-1 pb-lg-4 pb-4 pt-3">
             <h3
                 class="fw-bold pb-4 pt-3 fs-4 pb-5 text-center fst-italic animate__animated animate__bounceInLeft animate__infinite	infinite animate__slower 2s  ">
                 GOOGLE KEEP REPLICATE</h3>
@@ -295,14 +286,24 @@
     </section>
 
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
-<script src="script.js"></script>
-<script>
-    AOS.init({
-        once: false
-    });
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    
+    <script>
+        AOS.init({
+            once: false
+        });
 
+
+        
+        var typed = new Typed("#typed-text", {
+            strings: ["a Web Developer", "a Designer", "a Freelancer", "a Creative Mind"],
+            typeSpeed: 200,
+            backSpeed: 100,
+            loop: true
+        });
 </script>
 
 </html>
