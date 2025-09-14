@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT US</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="other.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
+
 <body>
-    <div class="row col-lg-10 col-12 d-flex justify-content-center px-2">
-        <div class="form1 col-lg-5  text-center text-white  fs-2 font-monospace fst-italic alll ">Welcome
-            <br>
-            <span class="fs-5"> Signup to continue</span>
+    <h1 class="text-center text-white mx-auto   my-5">CONTACT ME</h1>
+    <div class="row col-lg-10 col-12 d-flex  justify-content-center px-2 mx-auto">   
+        <div class="form1 col-lg-5 fst-italic alll col-11 mb-5  " style="font-size: 50px;">
+            <h2 class="text-center"> GET IN TOUCH </h2>
+            <p class="ps-3 pt-5 text-white">I'd like to hear from you!</p>
+
+            <p class="ps-3 text-white">If you have any inquiries or just want to say hi, please use the contact form!
+            </p>
+            <div class="d-flex justify-content-center mt-5 mb-2 gap-5  ">
+                <a href="mailto:oyebodes19@gmail.com"
+                    target="_blank"><i class='bx bxl-gmail' id="b"></i> </a>
+                <a href="https://wa.me/2349030030518?text=*Hello%20Samuel%20.* %0A%20I%20am%20interested%20in%20your%20work."
+                    target="_blank"> <i class='bx bxl-whatsapp' id="b"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61578384882029"
+                    target="_blank"><i class='bx bxl-facebook' id="b"></i> </a>
+                <a href="https://t.me/official_junior777"
+                    target="_blank"><i class='bx bxl-telegram' id="b"></i> </a>
+            </div>
+            <div class="d-flex justify-content-center  gap-5  ">
+                <a href="https://www.instagram.com/official_junior777/"
+                    target="_blank"><i class='bx bxl-instagram' id="b"></i> </a>
+                <a href="https://www.tiktok.com/@official_junior777"
+                    target="_blank"><i class='bx bxl-tiktok' id="b"></i> </a>
+                <a href="https://t.me/official_junior777"
+                    target="_blank"><i class='bx bxl-github' id="b"></i> </a>
+                <a href="https://twitter.com/OyebodeSa62062"
+                    target="_blank"><i class='bx bxl-twitter' id="b"></i> </a>
+            </div>
         </div>
-        <div class="form2 col-lg-5  all  ">
+        <div class="form2 col-lg-5  all col-11 mb-5">
+            <h4 class="pb-5 text-center fst-italic ">Contact me through mail</h4>
             <form id="contactForm" action="https://formsubmit.co/oyebodes19@gmail.com" method="POST"
-            class="col-12 text-center" enctype="multipart/form-data">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="https://junior-sam.github.io/my-portfolio/thankyou.html"> <input
-                type="text" id="text" name="name" placeholder="Your Name" class="col-12 "><br><br>
-            <input type="email" id="mail" name="email" placeholder="Your Email" class="col-12   "><br><br>
-            <input type="file" class="btn bg-black text-white  col-12" id="image" name="attachment"
-                accept="image/png, image/jpeg" style="padding:5px 0 35px 50px; margin-bottom: -10px;"><br><br>
-            <img id="preview" class="mb-2" src="#" alt="Image Preview"
-                style="display:none; max-width: 100%; border-radius: 10px;" />
-            <textarea id="messages" name="message" placeholder="Your Message" class="col-12"></textarea><br><br>
-            <div class="row d-flex justify-content-center gap-3"><button class="e-btn col-7 col-lg-7 rounded-3"
-                    onclick="allowEmail()">Send
-                    Message</button>
-                <button class="f-btn col-3 col-lg-4 rounded-3" type="button" onclick="exitEmail()">Cancel</button>
-            </div>
-        </form>
-            </div>
+                class="col-12 text-center" enctype="multipart/form-data">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://junior-sam.github.io/my-portfolio/thankyou.html">
+                <input type="text" id="text" name="name" placeholder="Your Name" class="col-10 "><br><br>
+                <input type="email" id="mail" name="email" placeholder="Your Email" class="col-10   "><br><br>
+                <input type="file" class="btn bg-black text-white  col-10" id="image" name="attachment"
+                    accept="image/png, image/jpeg" style="padding:5px 0 35px 50px; margin-bottom: -10px;"><br><br>
+                <img id="preview" class="mb-2" src="#" alt="Image Preview"
+                    style="display:none; max-width: 100%; border-radius: 10px;" />
+                <textarea id="messages" name="message" placeholder="Your Message" class="col-10"></textarea><br><br>
+                <button class="e-btn col-10 rounded-3"
+                        onclick="allowEmail()">Send
+                        Message</button>
+                    <!-- <button class="f-btn col-3 col-lg-3 rounded-3" type="button" onclick="exitEmail()">Cancel</button> -->
+            </form>
         </div>
-    </div> 
+        <a href="index.html"> <button class="e-btn col-10 rounded-bottom-5 rounded-3 mb-5 mx-auto"
+                        onclick="allowEmail()">Back to home</button></a>
+    </div>
+    </div>
 </body>
 <script src="other.js"></script>
+
 </html>

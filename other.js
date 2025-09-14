@@ -8,16 +8,16 @@ function myEmail() {
     document.querySelector(".blurItem").style.pointerEvents = "none";
 }
 
-function exitEmail() {
-    form.style.display = "none";
-    document.body.style.overflow = "";
-    document.body.style.position = "";
-    document.body.style.width = "";
-    window.scrollTo(0, -parseInt(document.body.style.top || "0"));
-    document.body.style.top = "";
-    document.querySelector(".blurItem").style.filter = "blur(0px)";
-    document.querySelector(".blurItem").style.pointerEvents = "";
-}
+// function exitEmail() {
+//     form.style.display = "none";
+//     document.body.style.overflow = "";
+//     document.body.style.position = "";
+//     document.body.style.width = "";
+//     window.scrollTo(0, -parseInt(document.body.style.top || "0"));
+//     document.body.style.top = "";
+//     document.querySelector(".blurItem").style.filter = "blur(0px)";
+//     document.querySelector(".blurItem").style.pointerEvents = "";
+// }
 
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     const name = document.getElementById('text').value.trim();

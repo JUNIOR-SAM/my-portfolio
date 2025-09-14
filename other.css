@@ -5,28 +5,27 @@
 }
 
 body {
-    background-color: rgba(255, 255, 0, 0.144);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color:rgba(0, 0, 255, 0.74);
+    /* display: flex; */
     height: 100vh;
 }
 
 .form1 {
-    background-color: black;
+    /* background-color: rgba(0, 0, 255, 0.767); */
+        background: linear-gradient(180deg,  rgba(255, 217, 0, 0.863), rgba(0, 0, 255, 0.014));
     height: 700px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 50px 0 0 50px;
+    padding-top: 50px;
 }
 
 .form2 {
     /* background-color: rgb(49, 0, 128); */
     height: 700px;
-    padding-top: 10px;
-    padding-top: 50px;
+    padding-top: 70px;
     color: white;
-    border-radius: 0px 10px 10px 0px;
-    padding: 20px;
-    background: linear-gradient(200deg, blue, gold);
+    border-radius: 0px 50px 50px 0px;
+    background: linear-gradient(180deg, rgba(255, 217, 0, 0.863),  rgba(0, 0, 255, 0.014));
+    /* background-color: gold; */
 }
 
 input {
@@ -41,13 +40,6 @@ label {
     padding-top: 20px;
 }
 
-.all {
-    padding-top: 150px;
-}
-
-.alll {
-    padding-top: 120px;
-}
 
 @media (max-width: 808px) {
     .form1 {
@@ -108,8 +100,9 @@ label {
     }
 
     .form2 {
-        height: 500px;
+        height: 550px;
         border-radius: 0 0 10px 10px;
+        background: linear-gradient(180deg, rgba(0, 0, 255, 0.055), rgba(255, 217, 0, 0.863));
     }
 
     .all {
@@ -155,7 +148,7 @@ textarea {
 }
 
 .e-btn {
-    background-color: #3c3cd3;
+    background-color: black;
     height: 40px;
     border-radius: 5px;
     border: none;
@@ -177,6 +170,22 @@ textarea {
     font-style: italic;
 }
 
-.my {
-   
+h2{
+    color: black;
+    font-family: cursive;
 }
+
+p{
+    font-size: 15px;
+}
+#b{
+    font-size: 30px;
+    color: black;
+}
+
+#b:hover{
+    color: gold;
+    cursor: pointer;
+    font-weight: bold;
+}
+
