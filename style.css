@@ -246,3 +246,27 @@ textarea {
 #us:hover{
     cursor: pointer;
 }
+
+.footer {
+  background: linear-gradient(135deg, #3c3cd3, gold);
+  color: white;
+  margin-top: 50px;
+  transition: background 1.5s ease-in-out;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: black; /* changes on hover */
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
