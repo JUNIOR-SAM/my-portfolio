@@ -40,6 +40,8 @@ body {
     background-color: #3c3cd3;
     position: relative;
     /* overflow: hidden; */
+    top: -30px;
+    
 }
 
 #myNavbar,
@@ -336,7 +338,7 @@ textarea {
 }
 
 .Btn{
-    height: 40px;
+    height: 43px;
     background-color: #3c3cd3;
     color: white;
     border: none;
