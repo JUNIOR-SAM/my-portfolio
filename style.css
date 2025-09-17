@@ -13,7 +13,8 @@ body {
 }
 
 .navbar {
-    /* background-color: #3c3cd3; */  /* ❌ remove this */
+    /* background-color: #3c3cd3; */
+    /* ❌ remove this */
     color: white;
     height: 65px;
 }
@@ -29,7 +30,7 @@ body {
     width: 150px;
 }
 
-    .d-block {
+.d-block {
     width: 100%;
 
 }
@@ -47,10 +48,11 @@ body {
 .navbar-toggler,
 .offcanvas,
 .offcanvas a {
-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
-.navbar, .dropdown-menu {
+.navbar,
+.dropdown-menu {
     transition: background-color 1.5s ease-in-out;
 }
 
@@ -60,12 +62,8 @@ transition: all 1s ease-in-out;
 
 .yoo {
     margin-bottom: 150px;
-    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.212), rgba(255, 255, 255, 0.212)), url(image/clint-patterson-dYEuFB8KQJk-unsplash.jpg);
-    /* background: url(image/clint-patterson-dYEuFB8KQJk-unsplash.jpg), linear-gradient(135deg, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.932)); */
     background-size: cover;
     background-position: center;
-    /* min-height: 400px; */
-    height: 100vh;
 }
 
 @media (max-width: 768px) {
@@ -96,7 +94,7 @@ transition: all 1s ease-in-out;
 
 .project {
     background-color: white;
-    border: 3px solid #3c3cd3; 
+    border: 3px solid #3c3cd3;
 }
 
 .nav-btn {
@@ -188,11 +186,11 @@ textarea {
     border-radius: 50px;
 }
 
-.whatt{
+.whatt {
     width: 60px;
 }
 
-.whattt{
+.whattt {
     width: 50px;
 }
 
@@ -233,40 +231,113 @@ textarea {
     border-radius: 7px;
 }
 
-.cardd:hover{
+.cardd:hover {
     transform: translateY(-20px);
     cursor: pointer;
-    transition: 0.7s ;
+    transition: 0.7s;
 }
 
-.me{
+.me {
     display: none;
 }
 
-#us:hover{
+#us:hover {
     cursor: pointer;
 }
 
 .footer {
-  background: linear-gradient(135deg, #3c3cd3, gold);
-  color: white;
-  margin-top: 50px;
-  transition: background 1.5s ease-in-out;
+    background: linear-gradient(135deg, #3c3cd3, gold);
+    color: white;
+    margin-top: 50px;
+    transition: background 1.5s ease-in-out;
 }
 
 .footer a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 8px;
-  transition: color 0.3s;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 8px;
+    transition: color 0.3s;
 }
 
 .footer a:hover {
-  color: black; /* changes on hover */
+    color: black;
+    /* changes on hover */
 }
 
 .footer p {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
+.buttonone {
+    /* position: relative; */
+    color: #e8e8e8;
+    font-size: 14px;
+    font-weight: 600;
+    width: 250px;
+    /* max-width: 45%; */
+    height: 60px;
+    border: none;
+    /* text-transform: uppercase; */
+    cursor: pointer;
+    overflow: hidden;
+    /* box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2); */
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    background-color: white;
+}
+
+.buttonone::before {
+    content: "Downloading";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 75%;   */
+    height: 70%;
+    pointer-events: none;
+    background-color: black;
+    transform: translate(0%, 380%);
+    z-index: 99;
+    position: relative;
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    border-radius: 10px;
+}
+
+.buttonone::after {
+    content: "Download Resume";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3c3cd3;
+    height: 70%;
+    pointer-events: none;
+    transform-origin: top;
+    transform: translate(0%, -100%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.buttonone:hover::before {
+    transform: translate(0%, 30%);
+    margin-bottom: -10px;
+}
+
+.buttonone:hover::after {
+    transform: translate(0%, -200%);
+}
+
+.buttonone:focus {
+    outline: none;
+}
+
+.buttonone:active {
+    scale: 0.95;
+}
+
+.Btn{
+    height: 40px;
+    background-color: #3c3cd3;
+    color: white;
+    border: none;
+}

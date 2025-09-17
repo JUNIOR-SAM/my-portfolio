@@ -121,14 +121,3 @@ setInterval(() => {
 
 
 
-
-
-// const colors = ['yellow', 'red', 'green', 'blue', 'orange', 'purple', 'pink', 'cyan', 'magenta', 'lime', 'teal', 'coral', 'navy', 'olive', 'maroon', 'silver'];
-//     let colorIndex = 0;
-//     setInterval(() => {
-//         document.getElementById("myNavbar").style.backgroundColor = colors[colorIndex];
-//         colorIndex = (colorIndex + 1) % colors.length;
-//     }, 1000);
-
-
-
