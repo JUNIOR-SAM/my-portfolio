@@ -17,6 +17,7 @@ body {
     /* ❌ remove this */
     color: white;
     height: 65px;
+    width: 100%;
 }
 
 
@@ -96,7 +97,7 @@ body {
 
 .project {
     background-color: white;
-    border: 3px solid #3c3cd3;
+    border: 2px solid #3c3cd3;
 }
 
 .nav-btn {
@@ -200,7 +201,7 @@ textarea {
     position: fixed;
     top: 800px;
     top: 88%;
-    right: 15px;
+    right: -15px;
     text-decoration: none;
     z-index: 9999;
 }
@@ -245,30 +246,6 @@ textarea {
 
 #us:hover {
     cursor: pointer;
-}
-
-.footer {
-    background: linear-gradient(135deg, #3c3cd3, gold);
-    color: white;
-    margin-top: 50px;
-    transition: background 1.5s ease-in-out;
-}
-
-.footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 8px;
-    transition: color 0.3s;
-}
-
-.footer a:hover {
-    color: black;
-    /* changes on hover */
-}
-
-.footer p {
-    margin: 5px 0;
 }
 
 .buttonone {
@@ -342,4 +319,80 @@ textarea {
     background-color: #3c3cd3;
     color: white;
     border: none;
+}
+
+::placeholder{
+    font-size: 15px;
+    opacity: 0.5;
+    color: black;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/* .msgbtn{
+    height: 40px;
+    top: -48px;
+    right: 605px;
+    position: relative;
+    cursor: pointer;
+} */
+
+.msgbtn {
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    top: -48px;
+    right: 605px;
+    /* Default for large screens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 991px) {
+    .msgbtn {
+        left: -75px;
+        font-size: 0.95rem;
+    }
+}
+
+/* For small screens (mobile) */
+@media (max-width: 767px) {
+    .msgbtn {
+        right: 100px;
+        top: -48px;
+        width: 100%;
+        max-width: 180px;
+        margin: 0 auto;
+        left: -50px;
+        font-size: 0.9rem;
+    }
+}
+
+/* For extra small screens */
+@media (max-width: 480px) {
+    .msgbtn {
+        top: -47px;
+        font-size: 0.85rem;
+        left: -30px;
+}
+}
+@media (min-width: 769px) and (max-width: 1500px) {
+     .msgbtn {
+        /* top: -47px; */
+        font-size: 0.85rem;
+        left: -470px;
+}
+}
+
+input{
+    position: relative;
+}
+
+footer{
+    background-color: #3c3cd3;
+    height: 200px;
+    max-width: 95%;
 }
