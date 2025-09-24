@@ -85,39 +85,69 @@ const colors = [
 let colorIndex = 0;
 
 setInterval(() => {
-  let navbar = document.getElementById("myNavbar");
+    let navbar = document.getElementById("myNavbar");
 
-  // Change navbar background
-  navbar.style.backgroundColor = colors[colorIndex].bg;
+    // Change navbar background
+    navbar.style.backgroundColor = colors[colorIndex].bg;
 
-  // Change all nav-link, dropdown and buttons inside navbar
-  let links = navbar.getElementsByTagName("a");
-  for (let link of links) {
-    link.style.color = colors[colorIndex].text;
-    link.style.borderColor = colors[colorIndex].text;
-  }
+    // Change all nav-link, dropdown and buttons inside navbar
+    let links = navbar.getElementsByTagName("a");
+    for (let link of links) {
+        link.style.color = colors[colorIndex].text;
+        link.style.borderColor = colors[colorIndex].text;
+    }
 
-  // Change dropdown menu background + text
-  let dropdowns = document.querySelectorAll(".dropdown-menu");
-  dropdowns.forEach(menu => {
-    menu.style.backgroundColor = colors[colorIndex].bg;
-    menu.style.transition = "background-color 1.5s ease-in-out"; // smooth change
-    let dropdownLinks = menu.querySelectorAll("a");
-    dropdownLinks.forEach(dl => {
-      dl.style.color = colors[colorIndex].text;
+    // Change dropdown menu background + text
+    let dropdowns = document.querySelectorAll(".dropdown-menu");
+    dropdowns.forEach(menu => {
+        menu.style.backgroundColor = colors[colorIndex].bg;
+        menu.style.transition = "background-color 1.5s ease-in-out"; // smooth change
+        let dropdownLinks = menu.querySelectorAll("a");
+        dropdownLinks.forEach(dl => {
+            dl.style.color = colors[colorIndex].text;
+        });
     });
-  });
 
-  // Change the navbar-toggler (hamburger icon on small screens)
-  let toggler = document.querySelector(".navbar-toggler");
-  if (toggler) {
-    toggler.style.borderColor = colors[colorIndex].text;
-  }
+    // Change the navbar-toggler (hamburger icon on small screens)
+    let toggler = document.querySelector(".navbar-toggler");
+    if (toggler) {
+        toggler.style.borderColor = colors[colorIndex].text;
+    }
 
-  colorIndex = (colorIndex + 1) % colors.length;
+    colorIndex = (colorIndex + 1) % colors.length;
 }, 2000); // every 2 seconds
 
+    document.getElementById("footerForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // prevent normal redirect
+
+        let form = e.target;
+        let formData = new FormData(form);
+
+        fetch("https://formsubmit.co/oyebodes19@gmail.com", {
+            method: "POST",
+            body: formData
+        }).then(response => {
+            if (response.ok) {
+                showToast("✅ Sent!");
+                form.reset();
+            } else {
+                showToast("❌ Failed, try again!");
+            }
+        }).catch(() => showToast("⚠️ Network error!"));
+    });
+
+    function showToast(message) {
+        let toast = document.getElementById("toast");
+        toast.textContent = message;
+        toast.style.display = "block";
+
+        setTimeout(() => {
+            toast.style.display = "none";
+        }, 3000);
+    }
 
 
+     const yearSpan = document.getElementById("year");
+  yearSpan.textContent = new Date().getFullYear();
 
 

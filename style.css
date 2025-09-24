@@ -391,8 +391,21 @@ input{
     position: relative;
 }
 
+#a{
+    text-decoration: none;
+    color: white;
+}
+
+.ull{
+    list-style: none;
+    line-height: 40px;
+}
+li:hover{
+    color: gold;
+    font-weight: bold;
+}
+
 footer{
     background-color: #3c3cd3;
-    height: 200px;
     max-width: 95%;
 }
