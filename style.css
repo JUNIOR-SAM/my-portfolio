@@ -13,9 +13,6 @@ body {
 }
 
 .navbar {
-    /* background-color: #3c3cd3; */
-    /* ❌ remove this */
-    color: white;
     height: 65px;
     width: 100%;
 }
